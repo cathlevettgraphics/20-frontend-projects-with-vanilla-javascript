@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <title>typing-game</title>
+</head>
+
+<body>
+  <button id="settings-btn" class="settings-btn">
+    <i class="fas fa-cog"></i>
+  </button>
+
+  <div id="settings" class="settings">
+    <form id="settings-form">
+      <div>
+        <label for="difficulty">difficulty</label>
+        <select id="difficulty">
+          <option value="easy">easy</option>
+          <option value="medium">medium</option>
+          <option value="hard">hard</option>
+        </select>
+      </div>
+    </form>
+  </div>
+
+  <div class="container">
+    <h2>speed typer</h2>
+    <small>type the following</small>
+    <h1 id="word"></h1>
+
+    <input type="text" id="text" autocomplete="off"
+      placeholder="type the word here">
+    <p class="time-container">time left: <span id="time">10s</span></p>
+    <p class="score-container">score: <span id="score">0</span></p>
+    <div id="end-game-container" class="end-game-container"></div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
